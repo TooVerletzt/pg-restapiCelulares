@@ -35,6 +35,7 @@ const updateCelular = async (req, res) => {
       celular.modelo = req.body.modelo;
       celular.precio = req.body.precio;
       celular.stock = req.body.stock;
+      celular.color = req.body.color;
       celular.descripcion = req.body.descripcion;
       await celular.save();
 
